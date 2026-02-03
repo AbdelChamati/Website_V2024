@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – Mona Chamati</title>
+
+<link rel="stylesheet" href="../rw_common/themes/Artful/consolidated-4.css">
+
+<style>
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  margin: 80px 0;
+}
+
+#contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+#contact-form label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+
+.required {
+  color: #c0392b;
+}
+
+.form-input-field {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.form-input-field:hover {
+  border-color: #c6a45c;
+}
+
+.form-input-field:focus {
+  outline: none;
+  border-color: #c6a45c;
+  box-shadow: 0 0 0 3px rgba(198,164,92,0.15);
+}
+
+/* ===== BUTTON ===== */
+#contact-form button {
+  display: inline-block;
+  background: #c6a45c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+#contact-form button:hover {
+  background: #b89345;
+  transform: translateY(-2px);
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+#success-message {
+  display: none;
+  margin-top: 20px;
+  background: #f4fdf7;
+  border-left: 4px solid #27ae60;
+  padding: 15px;
+  border-radius: 10px;
+  color: #2d6a4f;
+}
+
+/* ===== IMAGE ===== */
+.contact-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+
+  .contact-section {
+    margin: 50px 0;
+  }
+
+  #contact-form {
+    padding: 25px;
+  }
+
+  #contact-form button {
+    width: 100%;
+  }
+
+  .contact-image {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <a class="navbar-brand" href="../">
+      <div class="logo">
+        <img src="../rw_common/images/1 copy.jpg" alt="Mona Chamati">
+      </div>
+      <span class="navbar-title">Mona Chamati</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../brautstyling/">Brautstyling</a></li>
+        <li class="nav-item"><a class="nav-link" href="../gallerie/">Gallerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about-me/">Über mich</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link" href="../impressum/">Impressum</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ===== CONTACT ===== -->
+<div class="contact-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+
+        <h3>Ich freue mich auf deine Anfrage</h3>
+        <!-- <p>Antwort innerhalb von 24 Stunden garantiert ✨</p> -->
+
+        <form id="contact-form" action="https://formspree.io/f/mdadyvaq" method="POST">
+
+          <label>Dein Name <span class="required">*</span></label><br>
+          <input class="form-input-field" type="text" name="name" required><br><br>
+
+          <label>Deine E-Mail-Adresse <span class="required">*</span></label><br>
+          <input class="form-input-field" type="email" name="email" required><br><br>
+
+          <label>Betreff <span class="required">*</span></label><br>
+          <input class="form-input-field" type="text" name="subject" required><br><br>
+
+          <label>Telefonnummer <span class="required">*</span></label><br>
+          <input class="form-input-field" type="tel" name="phone" required><br><br>
+
+          <label>Nachricht <span class="required">*</span></label><br>
+          <textarea class="form-input-field" name="message" rows="6" required></textarea><br><br>
+
+          <button type="submit">Senden</button>
+
+        </form>
+
+        <div id="success-message">
+          ✅ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 contact-image text-center">
+        <img src="files/ljizlzhgq7wpsh5kvtcb_typewriter.jpg" alt="Kontakt">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER (IDENTICAL TO OTHER PAGES) ===== -->
+<div class="footer">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col">
+        <div class="footer-content">
+          &copy; 2026 Mona Chamati
+          <a href="#" class="AAD82539-D03E-450E-90E1-B724B553F7D6">
+            Contact Me</a>
+          <script>
+            (function () {
+              var _rwObsfuscatedHref0 = "mai";
+              var _rwObsfuscatedHref1 = "lto";
+              var _rwObsfuscatedHref2 = ":in";
+              var _rwObsfuscatedHref3 = "fo@";
+              var _rwObsfuscatedHref4 = "mon";
+              var _rwObsfuscatedHref5 = "ach";
+              var _rwObsfuscatedHref6 = "ama";
+              var _rwObsfuscatedHref7 = "ti.";
+              var _rwObsfuscatedHref8 = "de";
+              var _rwObsfuscatedHref =
+                _rwObsfuscatedHref0 +
+                _rwObsfuscatedHref1 +
+                _rwObsfuscatedHref2 +
+                _rwObsfuscatedHref3 +
+                _rwObsfuscatedHref4 +
+                _rwObsfuscatedHref5 +
+                _rwObsfuscatedHref6 +
+                _rwObsfuscatedHref7 +
+                _rwObsfuscatedHref8;
+              Array.from(
+                document.getElementsByClassName(
+                  "AAD82539-D03E-450E-90E1-B724B553F7D6"
+                )
+              ).forEach(function (x) {
+                x.href = _rwObsfuscatedHref;
+              });
+            })();
+          </script>
+        </div>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../brautstyling/" class="nav-link">Brautstyling</a></li>
+          <li class="nav-item"><a href="../gallerie/" class="nav-link">Gallerie</a></li>
+          <li class="nav-item"><a href="../about-me/" class="nav-link">Über mich</a></li>
+          <li class="nav-item"><a href="../contact-form/" class="nav-link">Kontakt</a></li>
+          <li class="nav-item"><a href="../impressum/" class="nav-link">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FORM SCRIPT ===== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      document.getElementById("success-message").style.display = "block";
+    } else {
+      alert("Es gab ein Problem beim Senden.");
+    }
+  });
+
+});
+</script>
+
+<script src="../rw_common/themes/Artful/js/main.js"></script>
+
+</body>
+</html>
