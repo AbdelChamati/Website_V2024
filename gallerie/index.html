@@ -28,6 +28,15 @@
    GALLERY RESPONSIVE GRID FIX
 ================================ */
 
+		.album-title {
+			text-align: center;
+		}
+
+		.album-description {
+			text-align: center;
+	
+		}
+
 		/* Make thumbnails flexible */
 		.album-wrapper {
 			display: flex;
@@ -44,7 +53,8 @@
 
 		.thumbnail-frame {
 			width: 100% !important;
-			overflow: visible;  /* Change from hidden */
+			overflow: visible;
+			/* Change from hidden */
 			border-radius: 10px;
 		}
 
@@ -63,11 +73,13 @@
 			/* transform: scale(1.08);
 			filter: brightness(1.05);
 			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); */
-			transform: scale(1.7); /* bigger zoom */
-            filter: brightness(1.05);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-            z-index: 10; /* ensures it appears above other images */
-            position: relative;
+			transform: scale(1.7);
+			/* bigger zoom */
+			filter: brightness(1.05);
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+			z-index: 10;
+			/* ensures it appears above other images */
+			position: relative;
 		}
 
 		/* ===============================
@@ -155,6 +167,14 @@
 
 		@media (max-width: 992px) {
 
+			.album-title {
+				text-align: center;
+			}
+
+			.album-description {
+				text-align: center;
+			}
+
 			.album-wrapper {
 				gap: 15px;
 			}
@@ -166,6 +186,14 @@
 		}
 
 		@media (max-width: 576px) {
+
+			.album-title {
+				text-align: center;
+			}
+
+			.album-description {
+				text-align: center;
+			}
 
 			.thumbnail-wrap {
 				width: 100% !important;
