@@ -44,7 +44,7 @@
 
 		.thumbnail-frame {
 			width: 100% !important;
-			overflow: hidden;
+			overflow: visible;  /* Change from hidden */
 			border-radius: 10px;
 		}
 
@@ -53,15 +53,21 @@
 			width: 100%;
 			height: auto;
 			display: block;
-			transition: all 0.4s ease;
+			/* transition: all 0.4s ease; */
 			border-radius: 10px;
+			transition: transform 0.5s ease, filter 0.4s ease, box-shadow 0.4s ease;
 		}
 
 		/* Hover effect */
 		.thumbnail-frame:hover img {
-			transform: scale(1.08);
+			/* transform: scale(1.08);
 			filter: brightness(1.05);
-			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); */
+			transform: scale(1.7); /* bigger zoom */
+            filter: brightness(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            z-index: 10; /* ensures it appears above other images */
+            position: relative;
 		}
 
 		/* ===============================
